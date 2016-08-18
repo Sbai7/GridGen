@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{121996B5-4527-42D1-A7AB-BC338E674560}">
+	<Platforms>
+		<Platform Name="Win32"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Interfaces="true" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" OutputFile="bin\$(ProjectName)_d.exe" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFLinkerTool" OutputFile="bin\$(ProjectName).exe" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<File RelativePath=".\src\bndFitted.f90"/>
+		<File RelativePath=".\src\command_line_syntax.f90"/>
+		<File RelativePath=".\src\globals.f90"/>
+		<File RelativePath=".\src\main.f90"/>
+		<File RelativePath=".\src\parse_command_line.f90"/>
+		<File RelativePath=".\src\string.f90"/>
+		<File RelativePath=".\src\writeMesh.f90"/>
+		<File RelativePath=".\src\xybord.f90"/>
+		<File RelativePath=".\src\xyfixed.f90"/>
+		<File RelativePath=".\src\xyfree.f90"/>
+		<File RelativePath=".\src\zfixed.f90"/>
+		<File RelativePath=".\src\zfree.f90"/></Files>
+	<Globals/></VisualStudioProject>
