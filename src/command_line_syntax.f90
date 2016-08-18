@@ -14,16 +14,13 @@
 !*
 !******************************************************************************
 
-PROGRAM GRID_GENERATOR
-! Main program for the grid generation pre-processor program 
-
-  USE GridGlobals
-  
-  IMPLICIT NONE
-  
-  CALL PARSE_COMMAND_LINE(project_pathname)
-  WRITE(6,*) "Project = ", CHAR(project_pathname)
-  
-  CALL BndFittedMesh()
-  
-END PROGRAM GRID_GENERATOR
+SUBROUTINE COMMAND_LINE_SYNTAX()
+! syntax: Prints a list of command line switches
+   write (6,*) "GRIDGEN: Boundary-fitted FEM grid generator for groundwater flow models - Version 1.0"
+   write (6,*) "GRIDGEN [-ih] <input-file>"
+   write (6,*)
+   write (6,*) " <input-file> a string identifier of the project datafile"
+   write (6,*) "   -i  To specify the input project file"
+   write (6,*) "   -h  To get this help screen"
+   STOP
+END SUBROUTINE COMMAND_LINE_SYNTAX

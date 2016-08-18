@@ -14,16 +14,36 @@
 !*
 !******************************************************************************
 
-PROGRAM GRID_GENERATOR
-! Main program for the grid generation pre-processor program 
+SUBROUTINE zFixed(n,nl) 
+! SUBROUTINE FOR CALCULATING FIXED Z-LAYERS 
 
-  USE GridGlobals
-  
-  IMPLICIT NONE
-  
-  CALL PARSE_COMMAND_LINE(project_pathname)
-  WRITE(6,*) "Project = ", CHAR(project_pathname)
-  
-  CALL BndFittedMesh()
-  
-END PROGRAM GRID_GENERATOR
+   USE GridGlobals
+
+   IMPLICIT NONE
+   integer, intent(in) :: n
+   integer, intent(in) :: nl
+
+   integer :: i,j,k
+   double precision :: up,down,s
+
+
+   do i = 1, nx
+      jloop: do j = 1, ny
+         up = 0.d0
+         down = 0.d0
+         do k = 1, np(n)
+            s = sqrt((x(i,j)-xp(k,n))**2+(y(i,j)-yp(k,n))**2)
+            if (s == 0.d0) then
+               z(i,j,nl) = zp(k,n)
+               cycle jloop
+            else
+               up = up + zp(k,n)/s
+               down = down+1/s
+            end if
+         end do
+         z(i,j,nl) = up/down
+      end do jloop
+   end do
+
+return
+END SUBROUTINE zFixed

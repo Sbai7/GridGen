@@ -14,16 +14,27 @@
 !*
 !******************************************************************************
 
-PROGRAM GRID_GENERATOR
-! Main program for the grid generation pre-processor program 
+SUBROUTINE zFree(nl1,nl2)
+! SUBROUTINE FOR CALCULATING FREE Z-LAYERS 
 
-  USE GridGlobals
-  
-  IMPLICIT NONE
-  
-  CALL PARSE_COMMAND_LINE(project_pathname)
-  WRITE(6,*) "Project = ", CHAR(project_pathname)
-  
-  CALL BndFittedMesh()
-  
-END PROGRAM GRID_GENERATOR
+   USE GridGlobals, only : nx,ny,z
+
+   IMPLICIT NONE
+   integer, intent(in) :: nl1
+   integer, intent(in) :: nl2
+
+   integer :: nl,i,j
+   double precision :: a
+
+
+   do nl = nl1, nl2
+      do i = 1, nx
+         do j = 1, ny
+            a = real(nl-nl1)/(nl2-nl1)
+            z(i,j,nl) = z(i,j,nl1)*(1-a)+z(i,j,nl2)*a
+         end do
+      end do
+   end do
+
+return
+END SUBROUTINE zFree
