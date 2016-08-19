@@ -34,10 +34,32 @@ You must have installed Visual Studio 2005 or above with a compatible Intel Visu
 That's all !
 
 ### Linux Platforms 
-- 
-- 
-- 
-- 
+Go to the root folder first, then copy & paste the following sequence of commands to your console:
+
+```
+mkdir build 
+cd build
+gfortran -c ../src/string.f90 
+gfortran -c ../src/globals.f90
+gfortran -c ../src/bndFitted.f90
+gfortran -c ../src/command_line_syntax.f90
+gfortran -c ../src/main.f90
+gfortran -c ../src/parse_command_line.f90
+gfortran -c ../src/writeMesh.f90
+gfortran -c ../src/xybord.f90
+gfortran -c ../src/xyfixed.f90
+gfortran -c ../src/xyfree.f90
+gfortran -c ../src/zfixed.f90
+gfortran -c ../src/zfree.f90
+gfortran *.o -o gridgen
+rm *.o *.mod 
+```
+
+Finally, install the binary file into any folder in your path (e.g. ``` ~/bin ```):
+
+```
+mv gridgen ~/bin 
+```
 
 ## Binary Releases
 We offer binary releases for windows platforms (>7) and they may be found in the '*releases*' page of this github repository. 
