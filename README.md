@@ -34,7 +34,7 @@ You must have installed Visual Studio 2005 or above with a compatible Intel Visu
 That's all !
 
 ### Linux Platforms 
-Go to the root folder first, then copy & paste the following sequence of commands to your console:
+Go to the root folder first, then copy & paste the following sequence of commands to your console window:
 
 ```
 mkdir build 
