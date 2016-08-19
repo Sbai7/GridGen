@@ -55,7 +55,7 @@ gfortran *.o -o gridgen
 rm *.o *.mod 
 ```
 
-Finally, install the binary file into any folder in your path (e.g. ``` ~/bin ```):
+Finally, install the binary file into any folder in your system path (e.g. ``` ~/bin ```):
 
 ```
 mv gridgen ~/bin 
