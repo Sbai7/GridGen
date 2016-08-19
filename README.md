@@ -13,6 +13,7 @@ Sbai, M.A. (2016). GridGen v1.0. Zenodo. 10.5281/zenodo.60439
 The program has been tested on the following platforms:
 - Microsoft Windows XP/7/10 
 - Ubuntu Linux 
+- Cygwin (Linux emulation layer for Windows platforms)
 
 The following compilers are equally supported: 
 - Intel Visual Fortran 11.1 or above 
@@ -21,6 +22,7 @@ The following compilers are equally supported:
 However only the following Platform/compiler combination has been tested to date:
 - Windows + Intel Visual Fortran 
 - Ubuntu Linux + GNU Fortran
+- Cygwin + GNU Fortran 
 
 Follow the instructions below to compile GridGen in your platform.
 
@@ -33,7 +35,7 @@ You must have installed Visual Studio 2005 or above with a compatible Intel Visu
 
 That's all !
 
-### Linux Platforms 
+### Linux / Cygwin Platforms 
 Go to the root folder first, then copy & paste the following sequence of commands to your console window:
 
 ```
