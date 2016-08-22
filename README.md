@@ -90,6 +90,7 @@ This is not useful in common hydrogeological applications but it is valuable in 
 
 Another, commonly encoutered situation in hydrogeology is related to well testing of hydrogeological characteristics of single and/or multiple aquifer systems. Analytical solutions for special cases are standard practice. To go even further by alleviating all the limitations of available analytical solutions a numerical groundwater flow model is more appropriate. In this context GridGen is also useful since it has the ability to generate high quality grids arround the wellbore. The area between the internal well radius and a given far flow boundary at which the drawdown is negligeable is gridded. The radial spacing could follow a linear, logarithmic or geometric distribution as shown in the following figure:
 
+![Alt text](pictures/example2.jpg?raw=true "")
 
 ### 3D grid of a realistic multilayer aquifer 
 
