@@ -90,7 +90,7 @@ where ``` example1 ``` is the prefix of the project to be processed.
 
 ### Input file 
 
-The program expects an input file with *.grd* extension (i.e. ``` example1.grd ```). The file structure is quite simple as it composed from the following sections:
+The program expects an input file with *.grd* extension (i.e. ``` example1.grd ```). The file structure is quite simple as it is composed from the following sections:
 
 - Three lines of user given comments
 - Target dimensions of the grid 
@@ -109,7 +109,7 @@ For each project the computer program creates 3 output ASCII files for the sake 
 
 ## Visualization of generated grids 
 
-This is not the purpose of a command-line program like this. To visually examine the generated mesh which is indispensable in practice except the simplest case you have two alternatives:
+This is not the purpose of a command-line program like this. To visually examine the generated mesh which is indispensable in practice except for the simplest cases, you have two alternatives:
 
 - Use [Tecplot](http://www.tecplot.com/) which is an outstanding commercial program for 3D visualization of results from Finite Element codes. If you got it installed in your PC just double click on the output Tecplot file to open it up. Read Tecplot manual how to post-process your files.  
 - Use the *Tecplot* filter available in [Paraview](http://www.paraview.org/) visualization software to load the generated Tecplot file. Since this software is Open-Source and readily available it is definitely the choice for people who don't own a Tecplot license. 
