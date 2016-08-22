@@ -28,15 +28,15 @@ Follow the instructions below to compile GridGen in your platform.
 
 ### Windows Platforms 
 You must have installed Visual Studio 2005 or above with a compatible Intel Visual Fortran compiler. You must select the installation of the Visual Studio integration package during the last installation to build VS Fortran projects right away from the graphical user interface. 
-- Double click on the Visual Studio 2005 solution file '*GridGen.sln*' to launch it in Visual Studio 2005. For other version, accept the project upgrade process and save your new solution.
+- Double click on the Visual Studio 2005 solution file '*GridGen.sln*' to launch it in Visual Studio 2005. For later versions, accept the project upgrade process and save your newly converted solution.
 - Select '*Release*' as a solution configuration and '*Win32*' as a solution platform from the two dropdown menus in the main toolbar. 
 - Fire 'F7' key or select '*Build > Build Solution*' menu command, then wait for a few minutes until compilation of all the project files. 
-- The target executable is located in '*bin*' subdirectory of the git distribution root folder. 
+- The target executable is located in '*bin*' subdirectory of the distribution root folder. 
 
 That's all !
 
 ### Linux / Cygwin Platforms 
-Go to the root folder first, then copy & paste the following sequence of commands to your console window:
+Go to the root folder first, then copy & paste the following sequence of commands to your console window or a new shell file created by your own:
 
 ```
 mkdir build 
