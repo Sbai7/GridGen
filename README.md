@@ -1,9 +1,9 @@
 # GridGen
 [![DOI](https://zenodo.org/badge/23898/Sbai7/GridGen.svg)](https://zenodo.org/badge/latestdoi/23898/Sbai7/GridGen)
 
-GridGen is a command-line grid generation program which is designed to quickly setup logically-rectangular (or IJK ordered) finite volume/element hexahedral meshes for three-dimensional stratigraphic models of pourous media subsurface aquifers. It is compatible with GwMove hydrogeological modelling software and could be easily tweaked to adapt to input requirements by other community hydrogeological (or earth-siences) computer modelling codes. 
+GridGen is a command-line grid generation program which is designed to quickly setup logically-rectangular (or IJK ordered) finite volume/element hexahedral meshes for three-dimensional stratigraphic models of porous media subsurface aquifers. It is compatible with GwMove hydrogeological modelling software and could be easily tweaked to adapt to input requirements by other community hydrogeological (or earth-sciences) computer modelling codes. 
 
-The power of GridGen lies in simplicity of usage and lightweight portable code which could be integrated easily into the core of legacy Fortran programs for automated boundary-fitted grid generation. However, it's not a universal automatic mesh generator since you cannot mesh general domains especially those with internal geometric constraints. Even with these limitations the program has proven suitable for many groundwater modelling projects and has been used etensively used by the authors and their collegues. 
+The power of GridGen lies in simplicity of usage and lightweight portable code which could be integrated easily into the core of legacy Fortran programs for automated boundary-fitted grid generation. However, it's not a universal automatic mesh generator since you cannot mesh general domains especially those with internal geometric constraints. Even with these limitations the program has proven suitable for many groundwater modelling projects and has been used extensively by the authors and their colleagues. 
 
 Please use the following citation when reporting results with this software:
 
@@ -35,7 +35,7 @@ You must have installed Visual Studio 2005 or above with a compatible Intel Visu
 - Fire 'F7' key or select '*Build > Build Solution*' menu command, then wait for a few minutes until compilation of all the project files. 
 - The target executable is located in '*bin*' subdirectory of the distribution root folder. 
 
-That's all !
+That's all!
 
 ### Linux / Cygwin Platforms 
 Go to the root folder first, then copy & paste the following sequence of commands to your console window or a new shell file created by your own:
@@ -77,4 +77,4 @@ We offer binary releases for windows platforms (>7) and they may be found in the
 ## Examples 
 
 ## Acknowledgments 
-The initial F77 program (Geo_Grid) was developped by Prof. Abdelkader Larabi (now @ Ecole Mohammedia d'Ingénieurs, University M. V, Rabat, Morrocco) during his Ph.D. Thesis between 1990 and 1994 at the laboratory of Hydrology, Free University, Brussels. It was improved by Dr. M. Adil Sbaï (now @ French Geological Survey) during his Ph.D. thesis between 1995 and 1999 in the same departement. Since then the progrma was used extensively in many groundwater modelling projects. 
+The initial F77 program (Geo_Grid) was developed by Prof. Abdelkader Larabi (now @ Ecole Mohammedia d'Ingénieurs, University M. V, Rabat, Morocco) during his Ph.D. Thesis between 1990 and 1994 at the laboratory of Hydrology, Free University, Brussels. It was improved by Dr. M. Adil Sbaï (now @ French Geological Survey) during his Ph.D. thesis days between 1995 and 1999 in the same department. Since then the program was used extensively in many groundwater modelling projects. 
