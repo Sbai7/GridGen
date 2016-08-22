@@ -93,7 +93,7 @@ Another, commonly encoutered situation in hydrogeology is related to well testin
 
 ### 3D grid of a realistic multilayer aquifer 
 
-This example demonstrates typical use of the program in the context of a realistic application designed to model flow and solute transport in a multilayer aquifer. The upper unit belongs to an uncofined aquifer whose mean depth is 11.7m while the lower confined aquifer mean depth is 5.7m. The two aquifers are separated by an aquitard with uniform thickness of 4.5m. A landfill contaminant area (not shown here) is located at the upper slice. The 'snapy nodes' features of the code was used to snap the closest nodes to this inner boundary and locate all nodes inside this polygon. The figure showing the aquifer geometry is just diplayed below:
+This example demonstrates typical use of the program in the context of a realistic application designed to model flow and solute transport in a multilayer aquifer system. The upper unit belongs to an unconfined aquifer whose mean depth is 11.7m while the lower confined aquifer mean depth is 5.7m. The two aquifers are separated by an aquitard with uniform thickness of 4.5m. A landfill contaminant area (not shown here) is located at the upper slice. The 'snapy nodes' features of the code was used to snap the closest nodes to this inner boundary and locate all nodes inside this polygon. The figure showing the aquifer geometry is just diplayed below:
 
 ![Alt text](pictures/example4_geom.jpg?raw=true "")
 
