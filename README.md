@@ -79,6 +79,7 @@ We offer binary releases for windows platforms (>7) and they may be found in the
 ![Alt text](pictures/example1.jpg?raw=true "")
 ![Alt text](pictures/example4_geom.jpg?raw=true "")
 ![Alt text](pictures/example4_mesh.jpg?raw=true "")
+![Alt text](pictures/example4_heads.jpg?raw=true "")
 
 ## Acknowledgments 
 The initial F77 program (Geo_Grid) was developed by Prof. Abdelkader Larabi (now @ Ecole Mohammedia d'Ingénieurs, University M. V, Rabat, Morocco) during his Ph.D. Thesis between 1990 and 1994 at the laboratory of Hydrology, Free University, Brussels. It was improved by Dr. M. Adil Sbaï (now @ French Geological Survey) during his Ph.D. thesis days between 1995 and 1999 in the same department. Since then the program was used extensively in many groundwater modelling projects. 
