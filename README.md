@@ -1,7 +1,7 @@
 # GridGen
 [![DOI](https://zenodo.org/badge/23898/Sbai7/GridGen.svg)](https://zenodo.org/badge/latestdoi/23898/Sbai7/GridGen)
 
-GridGen is a command-line elliptic grid generation program which is designed to quickly setup logically-rectangular (or IJK ordered) finite volume/element hexahedral meshes for three-dimensional stratigraphic models of porous media subsurface aquifers. It is compatible with GwMove hydrogeological modelling software and could be easily tweaked to adapt to input requirements by other community hydrogeological (or earth-sciences) computer modelling codes. 
+GridGen is a command-line elliptic grid generation program which is designed to quickly setup logically-rectangular (or IJK ordered) finite volume/element hexahedral meshes for three-dimensional stratigraphic models of porous media subsurface aquifers. It is compatible with [GwMove](https://github.com/Sbai7/GwMove) hydrogeological modelling software and could be easily tweaked to adapt to input requirements by other community hydrogeological (or earth-sciences) computer modelling codes. 
 
 The algorithm is based on numerical solution of an elliptic PDE namely the Laplace 2D equation in the plane [1,2,3]. Next, to build the full 3D grid, the planar grid is mapped into intermediate slices separating hydrogeological units with different lithology. Intermediate slices in each hydrogeological unit may be specified to get required accuracy along the vertical direction. The method is proven for its ability to generate very smooth and very high quality meshes for demanding finite element solvers. 
 
@@ -102,7 +102,7 @@ Here is a closeup view of the full 3D mesh which was designed for the groundwate
 
 ![Alt text](pictures/example4_mesh.jpg?raw=true "")
 
-Here is an example of the steady-state groundwater flow simulation with GwMove software computed on the previously constructued grid. Details of the simulation will be documented in GwMove wiki pages. 
+Here is an example of the steady-state groundwater flow simulation with [GwMove](https://github.com/Sbai7/GwMove) software computed on the previously constructued grid. Details of the simulation will be documented in [GwMove](https://github.com/Sbai7/GwMove) wiki pages. 
 
 ![Alt text](pictures/example4_heads.jpg?raw=true "")
 
