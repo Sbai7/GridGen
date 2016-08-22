@@ -70,11 +70,49 @@ mv gridgen ~/bin
 ## Binary Releases
 We offer binary releases for windows platforms (>7) and they may be found in the '*releases*' page of this github repository. 
 
-## Runing GridGen 
+## Runing GridGen
+
+Run GridGen by simply typing the following command:
+
+```
+.\gridgen -i example1  
+ Project = example1
+                    Generation of the finite element grid ...
+ Reading input file...
+ Gridding in the XY plane
+ Projection to Z-layers
+ Writing native mesh file
+ Writing mesh to Tecplot file ...
+
+```
+
+where ``` example1 ``` is the prefix of the project to be processed. 
 
 ### Input file 
 
+The program expects an input file with *.grd* extension (i.e. ``` example1.grd ```). The file structure is quite simple as it composed from the following sections:
+
+- Three lines of user given comments
+- Target dimensions of the grid 
+- List of bounding polygon points and their respective logical coordinates 
+- List of 3D mesh slices along with their positions 
+
+A fully detailed description of this file format will be add the wiki pages.
+
 ### Output file(s) 
+
+For each project the computer program creates 3 output ASCII files for the sake of portability and archival purposes. These are: 
+
+- A native ``` <project>.fem ``` file which holds nodal coordinates and the element-nodes connectivity table as required by [GwMove](https://github.com/Sbai7/GwMove) 
+- A ``` <project>.plt ``` file which holds an image of the 3D mesh in [Tecplot](http://www.tecplot.com/) format
+- A ``` <project>.dat ``` file which recalls the general characteristics of the generated structured finite element mesh
+
+## Visualization of generated grids 
+
+This is not the purpose of a command-line program like this. To visually examine the generated mesh which is indispensable in practice except the simplest case you have two alternatives:
+
+- Use [Tecplot](http://www.tecplot.com/) which is an outstanding commercial program for 3D visualization of results from Finite Element codes. If you got it installed in your PC just double click on the output Tecplot file to open it up. Read Tecplot manual how to post-process your files.  
+- Use the *Tecplot* filter available in [Paraview](http://www.paraview.org/) visualization software to load the generated Tecplot file. Since this software is Open-Source and readily available it is definitely the choice for people who don't own a Tecplot license. 
 
 ## Examples 
 
@@ -94,11 +132,11 @@ Another, commonly encoutered situation in hydrogeology is related to well testin
 
 ### 3) 3D grid setup for a moving water-table aquifer
 
-GwMove is works hand-in-hand with [GwMove](https://github.com/Sbai7/GwMove) since the latter accepts directly native grid output formats produced by GridGen. Here is an example where the initial mesh for 3D groundwater flow in a phreatic aquifer bounded by plateau and a river is constructed by GridGen:
+GwMove works hand-in-hand with [GwMove](https://github.com/Sbai7/GwMove) since the latter accepts directly the native output grid format produced by GridGen. Here is an example where the initial mesh for a 3D groundwater flow model in a phreatic aquifer bounded by a plateau and a river is constructed by GridGen:
 
 ![Alt text](pictures/example3_mesh1.jpg?raw=true "")
 
-[GwMove](https://github.com/Sbai7/GwMove) owing to its built-in layered adaptive mesh technique finishes computational work when the mesh upper slice converge to the expected water table position as shown below. Notice the mesh smoothness and the nice reproduction of the maximum drawdown arround the pumping well even with an important vertical exaggeration.  
+[GwMove](https://github.com/Sbai7/GwMove) owing to its built-in layered adaptive mesh technique finishes computational work when the mesh upper slice converge to the expected water table position as shown below. Notice the mesh smoothness and the nice reproduction of the maximum drawdown arround the pumping well even with an important vertical exaggeration and nearby coarse meshing.  
 
 ![Alt text](pictures/example3_mesh2.jpg?raw=true "")
 
@@ -116,15 +154,21 @@ Here is an example of the steady-state groundwater flow simulation with [GwMove]
 
 ![Alt text](pictures/example4_heads.jpg?raw=true "")
 
-### 5) Fine 3D grid in an underground clayey radioactive waste storage 
+### 5) Fine 3D grid in an underground clayey radioactive waste disposal  
+
+This illustrates the setup of a 3D model of flow and transport from a radioactive waste disposal facility in a clayey layer whose geometry is given below: 
 
 ![Alt text](pictures/example5_geom.jpg?raw=true "")
+
+The computational and accuracy requirements lead to the design of a very fine mesh with 232*125*9 = 261000 nodes and 229152 hexahedral cells in total. The mesh is so dense so that it is not possible to distinguish the mesh details when viewing the whole model. Thus, only an aquifer portion centered around the waste chambers is visualized in the following figure: 
+
 ![Alt text](pictures/example5_mesh.jpg?raw=true "")
+
+This is an example of the complex groundwater flow patterns at a selected time around the radioactive waste repository:
+
 ![Alt text](pictures/example5_heads.jpg?raw=true "")
 
-
-
-## Features in next releases 
+## Coming Features in next releases 
 These are the features to be integrated into the next releases. These are already operational, it will take just the time to cleanup the code, make some nice examples and yeah!
 
 - Snapy nodes feature 
