@@ -107,11 +107,11 @@ Here is an example of the steady-state groundwater flow simulation with [GwMove]
 ![Alt text](pictures/example4_heads.jpg?raw=true "")
 
 ## Features in next releases 
-These are the features to be integrated into the next releases. These are operational, it will take just the time to cleanup the code, makes some nice examples and yeah!
+These are the features to be integrated into the next releases. These are already operational, it will take just the time to cleanup the code, make some nice examples and yeah!
 
 - Snapy nodes feature 
 - Disapearing layers feature ('Couches biseautées' in French)
-- Build grid slices from 2D scatter points by interpolation
+- Build grid slices from 2D scatter points by two-dimensional splines interpolation
 
 ## Acknowledgments 
 The initial F77 program (Geo_Grid) was developed by Prof. Abdelkader Larabi (now @ Ecole Mohammedia d'Ingénieurs, University M. V, Rabat, Morocco) during his Ph.D. Thesis between 1990 and 1994 at the laboratory of Hydrology, Free University, Brussels. It was improved by Dr. M. Adil Sbaï (now @ French Geological Survey) during his Ph.D. thesis days between 1995 and 1999 in the same department. Since then the program was used extensively in many groundwater modelling projects. 
