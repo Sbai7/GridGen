@@ -78,7 +78,7 @@ We offer binary releases for windows platforms (>7) and they may be found in the
 
 ## Examples 
 
-### 3D grid of a soil sample
+### 1) 3D grid of a soil sample
 
 Here is an example of grid construction fitting the boundaries of a soil sample. First, we start by 2D gridding in the plane where 20 points of the circular circumference have been specified among which only four corner points have been explicitly fixed. Finally, the 2D mesh is simply projected in the vertical direction with equidistant spacing. Here it is:
 
@@ -86,13 +86,13 @@ Here is an example of grid construction fitting the boundaries of a soil sample.
 
 This is not useful in common hydrogeological applications but it is valuable in other contexts such as for two-phase / multiphase flow simulations to replicate laboratory experiments with other dedicated engines. We'll post a computational example later on. 
 
-### 3D radial grid arround a wellbore 
+### 2) 3D radial grid arround a wellbore 
 
 Another, commonly encoutered situation in hydrogeology is related to well testing of hydrogeological characteristics of single and/or multiple aquifer systems. Analytical solutions for special cases are standard practice. To go even further by alleviating all the limitations of available analytical solutions a numerical groundwater flow model is more appropriate. In this context GridGen is also useful since it has the ability to generate high quality grids arround the wellbore. The area between the internal well radius and a given far flow boundary at which the drawdown is negligeable is gridded. The radial spacing could follow a linear, logarithmic or geometric distribution as shown in the following figure:
 
 ![Alt text](pictures/example2.jpg?raw=true "")
 
-### 3D grid setup for a moving water-table aquifer
+### 3) 3D grid setup for a moving water-table aquifer
 
 GwMove is works hand-in-hand with [GwMove]((https://github.com/Sbai7/GwMove) since the latter accepts directly native grid output formats produced by GridGen. Here is an example where the initial mesh for 3D groundwater flow in a phreatic aquifer bounded by plateau and a river is constructed by GridGen:
 
@@ -102,7 +102,7 @@ GwMove is works hand-in-hand with [GwMove]((https://github.com/Sbai7/GwMove) sin
 
 ![Alt text](pictures/example3_mesh2.jpg?raw=true "")
 
-### 3D grid of a realistic multilayer aquifer 
+### 4) 3D grid of a realistic multilayer aquifer 
 
 This example demonstrates typical use of the program in the context of a realistic application designed to model flow and solute transport in a multilayer aquifer system. The upper unit belongs to an unconfined aquifer whose mean depth is 11.7m while the lower confined aquifer mean depth is 5.7m. The two aquifers are separated by an aquitard with uniform thickness of 4.5m. A landfill contaminant area (not shown here) is located at the upper slice. The 'snapy nodes' features of the code was used to snap the closest nodes to this inner boundary and locate all nodes inside this polygon. The figure showing the aquifer geometry is just diplayed below:
 
@@ -115,6 +115,14 @@ Here is a closeup view of the full 3D mesh which was designed for the groundwate
 Here is an example of the steady-state groundwater flow simulation with [GwMove](https://github.com/Sbai7/GwMove) software computed on the previously constructued grid. Details of the simulation will be documented in [GwMove](https://github.com/Sbai7/GwMove) wiki pages. 
 
 ![Alt text](pictures/example4_heads.jpg?raw=true "")
+
+### 5) Fine 3D grid in an underground clayey radioactive waste storage 
+
+![Alt text](pictures/example5_geom.jpg?raw=true "")
+![Alt text](pictures/example5_mesh.jpg?raw=true "")
+![Alt text](pictures/example5_heads.jpg?raw=true "")
+
+
 
 ## Features in next releases 
 These are the features to be integrated into the next releases. These are already operational, it will take just the time to cleanup the code, make some nice examples and yeah!
