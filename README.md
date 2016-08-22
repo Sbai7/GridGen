@@ -94,11 +94,11 @@ Another, commonly encoutered situation in hydrogeology is related to well testin
 
 ### 3) 3D grid setup for a moving water-table aquifer
 
-GwMove is works hand-in-hand with [GwMove]((https://github.com/Sbai7/GwMove) since the latter accepts directly native grid output formats produced by GridGen. Here is an example where the initial mesh for 3D groundwater flow in a phreatic aquifer bounded by plateau and a river is constructed by GridGen:
+GwMove is works hand-in-hand with [GwMove](https://github.com/Sbai7/GwMove) since the latter accepts directly native grid output formats produced by GridGen. Here is an example where the initial mesh for 3D groundwater flow in a phreatic aquifer bounded by plateau and a river is constructed by GridGen:
 
 ![Alt text](pictures/example3_mesh1.jpg?raw=true "")
 
-[GwMove]((https://github.com/Sbai7/GwMove) owing to its built-in layered adaptive mesh technique finishes computational work when the mesh upper slice converge to the expected water table position as shown below. Notice the mesh smoothness and the nice reproduction of the maximum drawdown arround the pumping well even with an important vertical exaggeration.  
+[GwMove](https://github.com/Sbai7/GwMove) owing to its built-in layered adaptive mesh technique finishes computational work when the mesh upper slice converge to the expected water table position as shown below. Notice the mesh smoothness and the nice reproduction of the maximum drawdown arround the pumping well even with an important vertical exaggeration.  
 
 ![Alt text](pictures/example3_mesh2.jpg?raw=true "")
 
