@@ -111,7 +111,7 @@ For each project the computer program creates 3 output ASCII files for the sake 
 
 This is not the purpose of a command-line program like this. To visually examine the generated mesh which is indispensable in practice except for the simplest cases, you have two alternatives:
 
-- Use [Tecplot](http://www.tecplot.com/) which is an outstanding commercial program for 3D visualization of results from Finite Element codes. If you got it installed in your PC just double click on the output Tecplot file to open it up. Read Tecplot manual how to post-process your files.  
+- Use [Tecplot](http://www.tecplot.com/) which is an outstanding commercial program for 3D visualization of results from Finite Element codes. If you got it installed in your PC just double click on the output Tecplot file to open it up. Read Tecplot manual to learn how to post-process your files.   
 - Use the *Tecplot* filter available in [Paraview](http://www.paraview.org/) visualization software to load the generated Tecplot file. Since this software is Open-Source and readily available it is definitely the choice for people who don't own a Tecplot license. 
 
 ## Examples 
