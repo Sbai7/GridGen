@@ -84,7 +84,7 @@ Here is an example of grid construction fitting the boundaries of a soil sample.
 
 ![Alt text](pictures/example1.jpg?raw=true "")
 
-This is not common in common hydrogeological applications but it is valuable in other contexts such as for two-phase / multiphase flow simulations to replicate laboratory experiments with other dedicated engines. We'll post a computational example later on. 
+This is not useful in common hydrogeological applications but it is valuable in other contexts such as for two-phase / multiphase flow simulations to replicate laboratory experiments with other dedicated engines. We'll post a computational example later on. 
 
 ### 3D radial grid arround a wellbore 
 
