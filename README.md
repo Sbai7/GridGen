@@ -7,7 +7,7 @@ The gridding algorithm is based on numerical solution of an [elliptic PDE](https
 
 The power of GridGen lies in simplicity of usage and lightweight portable code which could be integrated right away into the core of legacy Fortran programs for automated boundary-fitted grid generation. However, it's not a universal automatic mesh generator since you cannot mesh general domains especially those with internal geometric constraints. Even with these limitations the program has proven suitable for many groundwater modelling projects and has been used extensively by the authors and their colleagues. 
 
-GridGen is an open source initiative copyrignted by the terms of GPL3 license. It's brought to you to be useful by helping you not to reinvent the wheel. We'll be very pleased to use the following citation when reporting results with this program:
+GridGen is an open source initiative *copylefted* under the terms of [GPL3 license](http://www.gnu.org/licenses/gpl-3.0.html). It's brought to you to be useful by helping you not to reinvent the wheel. We'll be very pleased to use the following citation when reporting results with this program:
 
 Sbai, M.A. (2016). GridGen v1.0. Zenodo. 10.5281/zenodo.60439 
 
