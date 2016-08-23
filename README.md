@@ -180,6 +180,7 @@ These are the features to be integrated into the next releases. These are alread
 - Grid output in formats compatible with other groundwater modelling codes (i.e. USGS's SUTRA, ...)
 - Output of native VTK mesh format
 - Mesh cases feature 
+- Nearest neighbor soil type interpolation from boreholes and/or cross-sectional profiles  
 
 ## Acknowledgments 
 The initial F77 program (Geo_Grid) was developed by Prof. Abdelkader Larabi (now @ Ecole Mohammedia d'Ingénieurs, University M. V, Rabat, Morocco) during his Ph.D. Thesis between 1990 and 1994 at the laboratory of Hydrology, Free University, Brussels. It was improved by Dr. M. Adil Sbaï (now @ French Geological Survey) during his Ph.D. thesis days between 1995 and 1999 in the same department. Since then the program was continuously improved and extensively used in many groundwater modelling projects. 
