@@ -172,7 +172,7 @@ This is an example of the complex groundwater flow patterns at a selected time a
 These are the features to be integrated into the next releases. These are already operational, it will take just the time to cleanup the code, make some nice examples and yeah!
 
 - Snapy nodes feature 
-- control of coordinate line spacing by functions embedded in the partial differential operators of the generating system and by subsequent stretching transformation
+- Control of coordinate line spacing by functions embedded in the partial differential operators of the generating system and by subsequent stretching transformation
 - Disapearing layers feature ('Couches biseautées' in French)
 - Build grid slices from 2D scatter points by two-dimensional splines interpolation 
 - Grid output in formats compatible with other groundwater modelling codes (i.e. USGS's SUTRA, ...)
