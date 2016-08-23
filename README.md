@@ -124,9 +124,9 @@ Here is an example of grid construction fitting the boundaries of a soil sample.
 
 This is not useful in common hydrogeological applications but it is valuable in other contexts such as for two-phase / multiphase flow simulations to replicate laboratory experiments with other dedicated engines. We'll post a computational example later on. 
 
-### 2) 3D radial grid arround a wellbore 
+### 2) 3D radial grid around a wellbore 
 
-Another, commonly encoutered situation in hydrogeology is related to well testing of hydrogeological characteristics of single and/or multiple aquifer systems. Analytical solutions for special cases are standard practice. To go even further by alleviating all the limitations of available analytical solutions a numerical groundwater flow model is more appropriate. In this context GridGen is also useful since it has the ability to generate high quality grids arround the wellbore. The area between the internal well radius and a given far flow boundary at which the drawdown is negligeable is gridded. The radial spacing could follow a linear, logarithmic or geometric distribution as shown in the following figure:
+Another, commonly encountered situation in hydrogeology is related to well testing of hydrogeological characteristics of single and/or multiple aquifer systems. Analytical solutions for special cases are standard practice. To go even further by alleviating all the limitations of available analytical solutions a numerical groundwater flow model is more appropriate. In this context GridGen is also useful since it has the ability to generate high quality grids around the wellbore. The area between the internal well radius and a given far flow boundary at which the drawdown is negligible is gridded. The radial spacing could follow a linear, logarithmic or geometric distribution as shown in the following figure:
 
 ![Alt text](pictures/example2.jpg?raw=true "")
 
@@ -136,21 +136,21 @@ GwMove works hand-in-hand with [GwMove](https://github.com/Sbai7/GwMove) since t
 
 ![Alt text](pictures/example3_mesh1.jpg?raw=true "")
 
-[GwMove](https://github.com/Sbai7/GwMove) owing to its built-in layered adaptive mesh technique finishes computational work when the mesh upper slice converge to the expected water table position as shown below. Notice the mesh smoothness and the nice reproduction of the maximum drawdown arround the pumping well even with an important vertical exaggeration and nearby coarse meshing.  
+[GwMove](https://github.com/Sbai7/GwMove) owing to its built-in layered adaptive mesh technique finishes computational work when the mesh upper slice converge to the expected water table position as shown below. Notice the mesh smoothness and the nice reproduction of the maximum drawdown around the pumping well even with an important vertical exaggeration and nearby coarse meshing.  
 
 ![Alt text](pictures/example3_mesh2.jpg?raw=true "")
 
 ### 4) 3D grid of a realistic multilayer aquifer 
 
-This example demonstrates typical use of the program in the context of a realistic application designed to model flow and solute transport in a multilayer aquifer system. The upper unit belongs to an unconfined aquifer whose mean depth is 11.7m while the lower confined aquifer mean depth is 5.7m. The two aquifers are separated by an aquitard with uniform thickness of 4.5m. A landfill contaminant area (not shown here) is located at the upper slice. The 'snapy nodes' features of the code was used to snap the closest nodes to this inner boundary and locate all nodes inside this polygon. The figure showing the aquifer geometry is just diplayed below:
+This example demonstrates typical use of the program in the context of a realistic application designed to model flow and solute transport in a multilayer aquifer system. The upper unit belongs to an unconfined aquifer whose mean depth is 11.7m while the lower confined aquifer mean depth is 5.7m. The two aquifers are separated by an aquitard with uniform thickness of 4.5m. A landfill contaminant area (not shown here) is located at the upper slice. The ''snappy nodes' feature of the code was used to snap the closest nodes to this inner boundary and locate all nodes inside this polygon. The figure showing the aquifer geometry is just displayed below:
 
 ![Alt text](pictures/example4_geom.jpg?raw=true "")
 
-Here is a closeup view of the full 3D mesh which was designed for the groundwater simulation. It is composed from 73 nodes (or 72 cells), 89 nodes (or 88 cells) and 12 slices (11 layers) aligned along the X, Y and Z directions respectively. Thus, forming a mesh whose total number of nodes is 77964 and total number of hexahedral cells is 69696. 
+Here is a close-up view of the full 3D mesh which was designed for the groundwater simulation. It is composed from 73 nodes (or 72 cells), 89 nodes (or 88 cells) and 12 slices (11 layers) aligned along the X, Y and Z directions respectively. Thus, forming a mesh whose total number of nodes is 77964 and total number of hexahedral cells is 69696. 
 
 ![Alt text](pictures/example4_mesh.jpg?raw=true "")
 
-Here is an example of the steady-state groundwater flow simulation with [GwMove](https://github.com/Sbai7/GwMove) software computed on the previously constructued grid. Details of the simulation will be documented in [GwMove](https://github.com/Sbai7/GwMove) wiki pages. 
+Here is an example of the steady-state groundwater flow simulation with [GwMove](https://github.com/Sbai7/GwMove) software computed on the previously constructed grid. Details of the simulation will be documented in [GwMove](https://github.com/Sbai7/GwMove) wiki pages. 
 
 ![Alt text](pictures/example4_heads.jpg?raw=true "")
 
@@ -160,7 +160,7 @@ This illustrates the setup of a 3D model of flow and transport from a radioactiv
 
 ![Alt text](pictures/example5_geom.jpg?raw=true "")
 
-The computational and accuracy requirements lead to the design of a very fine mesh with 232 X 125 X 9 = 261000 nodes and 229152 hexahedral cells in total. The mesh is so dense so that it is not possible to distinguish the mesh details when viewing the whole model. Thus, only an aquifer portion centered around the waste chambers is visualized in the following figure: 
+The computational and accuracy requirements lead to the design of a very fine mesh with 232 X 125 X 9 = 261000 nodes and 229152 hexahedral cells in total. The mesh is so dense so that it is not possible to distinguish the mesh details when viewing the whole model. Thus, only an aquifer portion centred on the waste disposal facility is visualized in the following figure: 
 
 ![Alt text](pictures/example5_mesh.jpg?raw=true "")
 
@@ -169,11 +169,11 @@ This is an example of the complex groundwater flow patterns at a selected time a
 ![Alt text](pictures/example5_heads.jpg?raw=true "")
 
 ## Coming Features in next releases 
-These are the features to be integrated into the next releases. These are already operational, it will take just the time to cleanup the code, make some nice examples and yeah!
+These are the features to be integrated into the next releases. These are already operational, it will take just the time to clean-up the code, make some nice examples and yeah!
 
-- Snapy nodes feature 
+- Snappy nodes feature 
 - Control of coordinate line spacing by functions embedded in the partial differential operators of the generating system and by subsequent stretching transformation
-- Disapearing layers feature ('Couches biseautées' in French)
+- Disappearing layers feature ('Couches biseautées' in French)
 - Build grid slices from 2D scatter points by two-dimensional splines interpolation 
 - Grid output in formats compatible with other groundwater modelling codes (i.e. USGS's SUTRA, ...)
 - Output as native VTK mesh format
@@ -184,7 +184,7 @@ The initial F77 program (Geo_Grid) was developed by Prof. Abdelkader Larabi (now
 
 ## References 
 
-[1] Thompson, J.E., Thames, F.C., Mastin, C.W. (1974). "Automatic Numerical Generation of Body-fitted Curvilinear Coordinate System for Field Containing any Number of Arbitrary Two-Dimensional Bodies". J. Comput. Phys., 15(3):299–319. [doi:10.1016/0021-9991(74)90114-4](http://dx.doi.org/10.1016/0021-9991(74)90114-4).
+[1] Thompson, J.E., Thames, F.C., Mastin, C.W. (1974). "Automatic Numerical Generation of Body-fitted Curvilinear Coordinate System for Field containing any Number of Arbitrary Two-Dimensional Bodies". J. Comput. Phys., 15(3):299–319. [doi:10.1016/0021-9991(74)90114-4](http://dx.doi.org/10.1016/0021-9991(74)90114-4).
 
 [2] Thompson, Joe E., Warsi, Z. U. A. and Mastin, C. W. (1982). "Boundary-Fitted Coordinate Systems for Numerical Solution of Partial Differential Equations -- A Review", J. Comput. Phys., 47(1):1-108. [doi:10.1016/0021-9991(82)90066-3](http://dx.doi.org/10.1016/0021-9991(82)90066-3).
 
