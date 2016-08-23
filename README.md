@@ -160,7 +160,7 @@ This illustrates the setup of a 3D model of flow and transport from a radioactiv
 
 ![Alt text](pictures/example5_geom.jpg?raw=true "")
 
-The computational and accuracy requirements lead to the design of a very fine mesh with 232*125*9 = 261000 nodes and 229152 hexahedral cells in total. The mesh is so dense so that it is not possible to distinguish the mesh details when viewing the whole model. Thus, only an aquifer portion centered around the waste chambers is visualized in the following figure: 
+The computational and accuracy requirements lead to the design of a very fine mesh with 232 X 125 X 9 = 261000 nodes and 229152 hexahedral cells in total. The mesh is so dense so that it is not possible to distinguish the mesh details when viewing the whole model. Thus, only an aquifer portion centered around the waste chambers is visualized in the following figure: 
 
 ![Alt text](pictures/example5_mesh.jpg?raw=true "")
 
