@@ -67,6 +67,8 @@ Finally, install the binary file into any folder in your system path (e.g. ``` ~
 mv gridgen ~/bin 
 ```
 
+We beleive the code, in its current version, is portable to other platform/compiler combinations since it's made from a few routines. If not this should be very easy to fix. Please report any problem to the [author](<A HREF="sbai.github:san@gmail.com">) 
+
 ## Binary Releases
 We offer binary releases for windows platforms (>7) and they may be found in the '*releases*' page of this github repository. 
 
