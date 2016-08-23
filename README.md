@@ -183,8 +183,8 @@ The initial F77 program (Geo_Grid) was developed by Prof. Abdelkader Larabi (now
 
 ## References 
 
-[1] Thompson, J.E., Thames, F.C., Mastin, C.W. (1974). "Automatic Numerical Generation of Body-fitted Curvilinear Coordinate System for Field Containing any Number of Arbitrary Two-Dimensional Bodies". J. Comput. Phys. 15: 299–319. doi:10.1016/0021-9991(74)90114-4.
+[1] Thompson, J.E., Thames, F.C., Mastin, C.W. (1974). "Automatic Numerical Generation of Body-fitted Curvilinear Coordinate System for Field Containing any Number of Arbitrary Two-Dimensional Bodies". J. Comput. Phys., 15(3):299–319. [doi:10.1016/0021-9991(74)90114-4](http://dx.doi.org/10.1016/0021-9991(74)90114-4).
 
-[2] Thompson, Joe E., Warsi, Z. U. A. and Mastin, C. W. (1982). "Boundary-Fitted Coordinate Systems for Numerical Solution of Partial Differential Equations -- A Review", J. Comput. Phys., 47(1). 
+[2] Thompson, Joe E., Warsi, Z. U. A. and Mastin, C. W. (1982). "Boundary-Fitted Coordinate Systems for Numerical Solution of Partial Differential Equations -- A Review", J. Comput. Phys., 47(1):1-108. [doi:10.1016/0021-9991(82)90066-3](http://dx.doi.org/10.1016/0021-9991(82)90066-3).
 
 [3] Thompson, Joe E., Z.U.A. Warsi, Z. U. A. and Mastin, C. W. (1997). [Numerical Grid Generation: Foundations and Applications](http://www.erc.msstate.edu/publications/gridbook/download.php), Elsevier Science Publishing Co., Inc.
