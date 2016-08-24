@@ -173,14 +173,14 @@ This is an example of the complex groundwater flow patterns at a selected time a
 ## Coming Features in next releases 
 These are the features to be integrated into the next releases. These are already operational, it will take just the time to clean-up the code, make some nice examples and yeah!
 
-- Snappy nodes feature 
-- Control of coordinate line spacing by functions embedded in the partial differential operators of the generating system and by subsequent stretching transformation
-- Disappearing layers feature ('Couches biseautées' in French)
-- Build grid slices from 2D scatter points by two-dimensional splines interpolation 
-- Grid output in formats compatible with other groundwater modelling codes (i.e. USGS's SUTRA, ...)
-- Output of native VTK mesh format
-- Mesh cases feature 
 - Nearest neighbor soil type interpolation from boreholes and/or cross-sectional profiles  
+- Build grid slices from 2D scatter points by two-dimensional splines interpolation 
+- Control of coordinate line spacing by functions embedded in the partial differential operators of the generating system and by subsequent stretching transformation
+- Snappy nodes feature 
+- Grid output in formats compatible with other groundwater modelling codes (i.e. USGS's SUTRA, ...)
+- Disappearing layers feature ('Couches biseautées' in French)
+- Mesh cases feature 
+- Output to native VTK mesh format
 
 ## Acknowledgments 
 The initial F77 program (Geo_Grid) was developed by Prof. Abdelkader Larabi (now @ Ecole Mohammedia d'Ingénieurs, University M. V, Rabat, Morocco) during his Ph.D. Thesis between 1990 and 1994 at the laboratory of Hydrology, Free University, Brussels. It was improved by Dr. M. Adil Sbaï (now @ French Geological Survey) during his Ph.D. thesis days between 1995 and 1999 in the same department. Since then the program was continuously improved and extensively used in many groundwater modelling projects. 
