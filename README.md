@@ -189,17 +189,17 @@ This is an example of the complex groundwater flow patterns at a selected time a
 
 ### 6) Setup of complex stratigraphic (or non-stratigraphic) models 
 
-One challenging issue in groundwater modelling practice is representation of the inherently complex geological features at different scales in subsurface aquifers. The defacto standard in three-dimensional groundwater modelling practice is to setup layered models whose layers gently follow the aquifers/acquicludes interfaces. Obviously this is not possible in general, but it's possible to do it with GridGen since version 2.0.0. 
+One challenging issue in groundwater modelling practice is representation of the inherently complex geological features at different scales in subsurface aquifers. The defacto standard in three-dimensional groundwater modelling practice is to setup layered models whose slices gently follow the aquifers/acquicludes interfaces. Obviously this is not possible in general, but it's possible to do it with GridGen since version 2.0.0. 
 
-Let's consider the following geologist's sketch of a soil type Y-axis orthogonal cross-section: 
+Let's consider the following geologist's sketch of a soil type cross-section orthogonal to Y-axis : 
 
-Additionally, let's assume that the third soil type (or horizon numbered by 3) has been only shown to exist in the back along the Y-axis but completely disappears when approaching the front along the this axis direction. Soil type 3 is replaced by the underlaying material (soil type 4) in this way. We consider then two soil types cross-sections at positions Y = 100m and Y = 6900m (close to the back and front faces, respectively) and whose distances of influence are 5000m and 2000m, respectively. A cross-section distance of influence is a paframeter which attributes the spatial neighborhood zone around each plane. All cells lying within this zone will have the soil type of the nearest point in the cross-section plane.  
+Additionally, let's assume that the third soil type (or horizon numbered by 3) does only exists in the back along the Y-axis but completely disappears when approaching the front along this axis direction. Soil type 3 is replaced by the underlaying material (soil type 4) in this way. We consider then two soil types cross-sections at positions Y = 100m and Y = 6900m (close to the back and front faces, respectively) and whose distances of influence are 5000m and 2000m, respectively. A cross-section distance of influence is a parameter which selects the spatial neighborhood zone around each plane for preferential interpolation. All cells lying within this zone will have the soil type of the nearest point among all neighbor cross-section profiles.  
 
 ![Alt text](pictures/example6_fancyPlot.jpg?raw=true "")
 
-Here we show a fency plot of the 3D interpolated soil types on a 60 x 30 x 30 regular grid size discretizing an area of 10Km by 7Km of areal extent and having 150m depth. Notice, that the assumption of regularity is only applicable to this demonstration example. GridGen is indeed able to do the same job on logically rectangular grid which are curvilinear. From the last plot we notice the reproduction of the initially entered two Y-orhogona cross-sections and another two midway cross-section showing how soil types interpolation is proceeding, namely how layer number 3 (with cyan color) is disappearing. 
+Here we show a fancy plot of the 3D interpolated soil types on a 60 x 30 x 30 regular grid size discretizing an area of 10Km by 7Km of areal extent and with 150m depth. Notice, that the assumption of regularity is only applicable to this demonstration example. GridGen is indeed able to do the same job on logically rectangular grids which are curvilinear. From the last plot we notice the reproduction of the initially entered two Y-orhogonal cross-sections and another two midway cross-sections showing how soil types interpolation is performing, namely how layer number 3 (with cyan color) is disappearing. 
 
-The next figure shows the three-dimensional saptial distribution of the soil types from bottom to top. It is clear that our final model fits our initial conceptual model sketched by hand. 
+The next figure shows the three-dimensional saptial distributions of the soil types from bottom to top. It is clear that our final model exactly fits our initial conceptual model sketched by hand. 
 
 ![Alt text](pictures/example6_soilGroups.jpg?raw=true "")
 
