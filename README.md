@@ -193,6 +193,8 @@ One challenging issue in groundwater modelling practice is representation of the
 
 Let's consider the following geologist's sketch of a soil type cross-section orthogonal to Y-axis : 
 
+![Alt text](pictures/example6_sketch1.jpg?raw=true "")
+
 Additionally, let's assume that the third soil type (or horizon numbered by 3) does only exists in the back along the Y-axis but completely disappears when approaching the front along this axis direction. Soil type 3 is replaced by the underlaying material (soil type 4) in this way. We consider then two soil types cross-sections at positions Y = 100m and Y = 6900m (close to the back and front faces, respectively) and whose distances of influence are 5000m and 2000m, respectively. A cross-section distance of influence is a parameter which selects the spatial neighborhood zone around each plane for preferential interpolation. All cells lying within this zone will have the soil type of the nearest point among all neighbor cross-section profiles.  
 
 ![Alt text](pictures/example6_fancyPlot.jpg?raw=true "")
