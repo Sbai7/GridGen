@@ -22,15 +22,18 @@
 				<Tool Name="VFPreLinkEventTool"/>
 				<Tool Name="VFPreBuildEventTool"/>
 				<Tool Name="VFPostBuildEventTool"/>
-				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true" EmbedManifest="false"/></Configuration></Configurations>
 	<Files>
 		<File RelativePath=".\src\bndFitted.f90"/>
+		<File RelativePath=".\src\buildconnec.f90"/>
 		<File RelativePath=".\src\command_line_syntax.f90"/>
 		<File RelativePath=".\src\globals.f90"/>
+		<File RelativePath=".\src\interpsoils.f90"/>
 		<File RelativePath=".\src\main.f90"/>
 		<File RelativePath=".\src\parse_command_line.f90"/>
 		<File RelativePath=".\src\string.f90"/>
 		<File RelativePath=".\src\writeMesh.f90"/>
+		<File RelativePath=".\src\writeTecplot.f90"/>
 		<File RelativePath=".\src\xybord.f90"/>
 		<File RelativePath=".\src\xyfixed.f90"/>
 		<File RelativePath=".\src\xyfree.f90"/>
