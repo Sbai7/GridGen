@@ -11,6 +11,20 @@ GridGen is an open source initiative *copylefted* under the terms of [GPL3 licen
 
 Sbai, M.A. (2016). GridGen v1.0. Zenodo. 10.5281/zenodo.60439 
 
+## News 
+
+### Version 2.0.0
+
+31/08/2016
+
+Add soil types interpolation feature. Complex stratigraphic hydrogeological models could be constructued from prior information provided in a list of cross-sectional soil types profiles as sketched by a geologist. Interpolation into grid cells is performed with an algorithm based on the nearest neighbor (or natural) interpolation technique. 
+
+A brief showcase example corresponds to example 6 below.
+
+More explanations on the method, file formats, etc. may be consulted in the Wiki pages. 
+
+Enjoy !
+
 ## Building GridGen from source 
 
 ### Supported Platforms / Compilers 
@@ -51,7 +65,7 @@ gfortran -c ../src/bndFitted.f90
 gfortran -C ../src/buildConnec.f90
 gfortran -c ../src/command_line_syntax.f90
 gfortran -c ../src/main.f90
-gfortran -c ../interpsoils.f90
+gfortran -c ../src/interpsoils.f90
 gfortran -c ../src/parse_command_line.f90
 gfortran -c ../src/writeMesh.f90
 gfortran -c ../src/writeTecplot.f90
