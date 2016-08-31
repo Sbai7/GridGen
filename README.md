@@ -48,10 +48,13 @@ cd build
 gfortran -c ../src/string.f90 
 gfortran -c ../src/globals.f90
 gfortran -c ../src/bndFitted.f90
+gfortran -C ../src/buildConnec.f90
 gfortran -c ../src/command_line_syntax.f90
 gfortran -c ../src/main.f90
+gfortran -c ../interpsoils.f90
 gfortran -c ../src/parse_command_line.f90
 gfortran -c ../src/writeMesh.f90
+gfortran -c ../src/writeTecplot.f90
 gfortran -c ../src/xybord.f90
 gfortran -c ../src/xyfixed.f90
 gfortran -c ../src/xyfree.f90
