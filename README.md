@@ -191,7 +191,7 @@ This is an example of the complex groundwater flow patterns at a selected time a
 
 One challenging issue in groundwater modelling practice is representation of the inherently complex geological features at different scales in subsurface aquifers. The defacto standard in three-dimensional groundwater modelling practice is to setup layered models whose slices gently follow the aquifers/acquicludes interfaces. Obviously this is not possible in general, but it's possible to do it with GridGen since version 2.0.0. 
 
-Let's consider the following geologist's sketch of a soil type cross-section orthogonal to Y-axis : 
+Let's consider the following geologist's sketch of a soil type cross-section orthogonal to Y-axis (the vertical Z scale is exaggerated): 
 
 ![Alt text](pictures/example6_sketch1.jpg?raw=true "")
 
