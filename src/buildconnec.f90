@@ -31,21 +31,30 @@
 !*
 !******************************************************************************
 
-SUBROUTINE COMMAND_LINE_SYNTAX()
-! Prints a list of program supported command line switches
-   
+SUBROUTINE BuildConnectivity()
+! Builds connectivity table of the FE mesh 
+
    USE GridGlobals
-   IMPLICIT NONE 
-   
-   WRITE (con_unit,*) &
-   "GRIDGEN: Command-line Grid Generation Program and Much More - Version ", &
-   GridGen_version
-   
-   WRITE (con_unit,*) "GRIDGEN [-ih] <input-file>"
-   WRITE (con_unit,*)
-   WRITE (con_unit,*) " <input-file> a string identifier of the project datafile"
-   WRITE (con_unit,*) "   -i  To specify the input project file"
-   WRITE (con_unit,*) "   -h  To get this help screen"
-   
-   STOP
-END SUBROUTINE COMMAND_LINE_SYNTAX
+
+   IMPLICIT NONE
+   INTEGER :: i,j,k, nr
+
+   nr = 0
+   DO k = 1, nz-1
+      DO j = 1, ny-1
+         DO i = 1, nx-1
+            nr = nr + 1
+            node(nr,1) = i + (j-1)*nx + (k-1)*nx*ny
+            node(nr,2) = node(nr,1) + nx
+            node(nr,3) = node(nr,1) + nx + 1
+            node(nr,4) = node(nr,1) + 1
+            node(nr,5) = node(nr,1) + nx*ny
+            node(nr,6) = node(nr,5) + nx
+            node(nr,7) = node(nr,5) + nx + 1
+            node(nr,8) = node(nr,5) + 1
+         END DO
+      END DO
+   END DO
+
+RETURN 
+END SUBROUTINE BuildConnectivity
