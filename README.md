@@ -197,7 +197,13 @@ Additionally, let's assume that the third soil type (or horizon numbered by 3) h
 
 ![Alt text](pictures/example6_fancyPlot.jpg?raw=true "")
 
-Here we show a fency plot of the 3D interpolated soil types on a 60 x 30 x 30 regular grid size discretizing an area of 10Km by 7Km of areal extent and having 150m depth. Notice, that the assumption of regularity is only applicable to this demonstration example. GridGen is indeed able to do the same job on logically rectangular grid which are curvilinear. From the last plot we notice the reproduction of the initially entered two Y-orhogona cross-sections and another two midway cross-section showing how soil types interpolation is proceeding, namely how layer number 3 (with cyan color) is disappearing.      
+Here we show a fency plot of the 3D interpolated soil types on a 60 x 30 x 30 regular grid size discretizing an area of 10Km by 7Km of areal extent and having 150m depth. Notice, that the assumption of regularity is only applicable to this demonstration example. GridGen is indeed able to do the same job on logically rectangular grid which are curvilinear. From the last plot we notice the reproduction of the initially entered two Y-orhogona cross-sections and another two midway cross-section showing how soil types interpolation is proceeding, namely how layer number 3 (with cyan color) is disappearing. 
+
+The next figure shows the three-dimensional saptial distribution of the soil types from bottom to top. It is clear that our final model fits our initial conceptual model sketched by hand. 
+
+![Alt text](pictures/example6_soilGroups.jpg?raw=true "")
+
+This is just an example, in practice soil type profiles could be imported from a diversity of sources such as geomodelling software, geophysical characterization, local information from boreholes, etc. 
 
 ## Coming Features in next releases 
 These are the features to be integrated into the next releases. These are already operational, it will take just the time to clean-up the code, make some nice examples and yeah!
