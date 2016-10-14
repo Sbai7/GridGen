@@ -210,7 +210,10 @@ This is just an example, in practice soil type profiles could be imported from a
 ## Coming Features in next releases 
 These are the features to be integrated into the next releases. These are already operational, it will take just the time to clean-up the code, make some nice examples and yeah!
 
-- Build grid slices from 2D scatter points by two-dimensional splines interpolation 
+- Build grid slices from two-dimensional scatter points by two-dimensional surface spline interpolation 
+- Three-dimensional interpolation of scalar fields from 3D scatter data in space. 
+- Transfer (i.e. projection) of scalar field between two differents meshes of the same domain. 
+- Extraction of local subdomain meshes from a regional mesh of a study area. 
 - Control of coordinate line spacing by functions embedded in the partial differential operators of the generating system and by subsequent stretching transformation
 - Snappy nodes feature 
 - Grid output in formats compatible with other groundwater modelling codes (i.e. USGS's SUTRA, ...)
