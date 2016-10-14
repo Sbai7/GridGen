@@ -1,7 +1,7 @@
 # GridGen
 [![DOI](https://zenodo.org/badge/23898/Sbai7/GridGen.svg)](https://zenodo.org/badge/latestdoi/23898/Sbai7/GridGen)
 
-GridGen is a command-line [elliptic grid generation](http://www.erc.msstate.edu/publications/gridbook/chap06.php) program which is designed to quickly setup logically-rectangular (or IJK ordered) finite volume/element hexahedral meshes for three-dimensional stratigraphic models of porous media subsurface aquifers. It is compatible with [GwMove](https://github.com/Sbai7/GwMove) hydrogeological modelling software and could be easily tweaked to adapt to input requirements by other community hydrogeological (or earth-sciences) computer modelling codes. 
+GridGen is a command-line [elliptic grid generation](http://www.erc.msstate.edu/publications/gridbook/chap06.php) program which is designed to quickly setup logically-rectangular (or IJK ordered) finite volume/element hexahedral meshes for three-dimensional stratigraphic models of porous media subsurface aquifers. It could also be used for interpolation of soil types from 2D cross-sections, or for geological surface reconstruction from 2D scatter datasets. It is compatible with [GwMove](https://github.com/Sbai7/GwMove) hydrogeological modelling software and could be easily tweaked to adapt to input requirements by other community hydrogeological (or earth-sciences) computer modelling codes. 
 
 The gridding algorithm is based on numerical solution of an [elliptic PDE](https://en.wikipedia.org/wiki/Elliptic_operator) namely the two-dimensional [Laplace equation](https://en.wikipedia.org/wiki/Laplace%27s_equation) in the plane [1,2,3]. Next, to build the full 3D grid, the planar grid is extruded into intermediate slices separating hydrogeological units with different lithologies. Intermediate slices in each hydrogeological unit may be specified to get required accuracy along the vertical direction. The method is proven for its ability to generate very smooth and very high quality meshes for demanding finite volume and finite element solvers. 
 
@@ -210,16 +210,18 @@ This is just an example, in practice soil type profiles could be imported from a
 ## Coming Features in next releases 
 These are the features to be integrated into the next releases. These are already operational, it will take just the time to clean-up the code, make some nice examples and yeah!
 
-- Build grid slices from two-dimensional scatter points by two-dimensional surface spline interpolation 
+- Build grid slices from two-dimensional scatter points by two-dimensional surface spline interpolation.
 - Three-dimensional interpolation of scalar fields from 3D scatter data in space. 
-- Transfer (i.e. projection) of scalar field between two differents meshes of the same domain. 
+- Transfer (i.e. projection) of scalar field between two differents meshes of the same domain.
+- Interpolation of scalar and vector fields in three-dimensional space by the natural neighbor interpolation method.
 - Extraction of local subdomain meshes from a regional mesh of a study area. 
-- Control of coordinate line spacing by functions embedded in the partial differential operators of the generating system and by subsequent stretching transformation
-- Snappy nodes feature 
-- Grid output in formats compatible with other groundwater modelling codes (i.e. USGS's SUTRA, ...)
-- Disappearing layers feature ('Couches biseautées' in French)
-- Mesh cases feature 
-- Output to native VTK mesh format
+- Control of coordinate line spacing by functions embedded in the partial differential operators of the generating system and by subsequent stretching transformation.
+- Snappy nodes feature.
+- Grid output in formats compatible with other community groundwater modelling codes (i.e. USGS's SUTRA, ...).
+- Disappearing layers feature ('Couches biseautées' in French).
+- Mesh cases feature.
+- Output to native VTK mesh format. 
+- Python wrapper around subroutines collection. 
 
 ## Acknowledgments 
 The initial F77 program (Geo_Grid) was developed by Prof. Abdelkader Larabi (now @ Ecole Mohammedia d'Ingénieurs, University M. V, Rabat, Morocco) during his Ph.D. Thesis between 1990 and 1994 at the laboratory of Hydrology, Free University, Brussels. It was improved by Dr. M. Adil Sbaï (now @ French Geological Survey) during his Ph.D. thesis days between 1995 and 1999 in the same department. Since then the program was continuously improved and extensively used in many groundwater modelling projects. 
